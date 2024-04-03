@@ -116,6 +116,8 @@ header {
   .nav {
     flex-direction: row;
     align-items: center; }
+  html {
+    font-size: 62.5%; }
   .nav__logo {
     order: -1; }
   .nav__links {
@@ -140,7 +142,8 @@ header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    z-index: 300; }
+    z-index: 300;
+    font-size: 8rem; }
   .mobile__links,
   .mobile__links li,
   .mobile__links a {
@@ -151,7 +154,19 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1.5rem 0; }
+    margin: 1.5rem 0; } }
+  @media only screen and (max-width: 768px) and (max-width: 50em) {
+    .mobile__links,
+    .mobile__links li,
+    .mobile__links a {
+      font-size: 56%; } }
+  @media only screen and (max-width: 768px) and (max-width: 56.25em) {
+    .mobile__links,
+    .mobile__links li,
+    .mobile__links a {
+      font-size: 56%; } }
+
+@media only screen and (max-width: 768px) {
   .closed-menu {
     transform: translateX(100%); } }
 
